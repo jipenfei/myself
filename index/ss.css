@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,li{
+    list-style: none
+}
+/* aside */
+.aside{
+    width: 20%;
+    height: 100%;
+    padding-top:60px;
+    text-align: center;
+    position: fixed;
+    background: #FFF0F5;
+    overflow-y: scroll;
+    z-index: 1;
+}
+
+.aside img{
+    display: none;
+}
+.aside .img-circle{
+    display: block;
+    width: 100px;
+    height: 100px;
+    border:2px solid #000;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    cursor: pointer;
+}
+.aside span{
+    font-family: "Roboto", Arial, sans-serif;
+    font-weight: 700;
+    margin-bottom: 2em;
+    text-transform: uppercase;
+    font-size: 20px;
+    display: block;
+    position: absolute;
+    left:50%;
+    transform: translate(-50%, 0);
+    top:160px;
+}
+.aside ul{
+    box-sizing: border-box;
+    padding-left: 20%;
+}
+.aside ul li{
+    height: 40px;
+    width:75%;
+    font-family: "Roboto", Arial, sans-serif;
+    margin: 0 0 20px 0;
+    font-size: 14px;
+    color:#000;
+    font-weight: 700;
+    border:2px solid;
+    border-radius: 25px;
+    -moz-border-radius:25px;
+    -webkit-border-radius:25px;
+    line-height: 40px;
+    cursor: pointer;
+}
+.aside ul li:hover{
+    background: #000;
+    color: white;
+}
+
+.person{
+    background: #FFF0F5;
+    height: 250px;
+    background:;
+    position: fixed;
+    top:20%;
+    left:20%;
+    display: none;
+}
+@-webkit-keyframes my
+{
+    from{
+        background: red;
+        width: 0px;
+        height: 0px;
+        transform: rotatez(0)
+    }
+    to{
+        width: 150px;
+        transform: rotatez(360deg)
+    }
+}
+.aside ul{
+    margin-top:200px;
+}
+/* aside结束 */
+
+
+/* ss开始 */
+.ss{
+    float: right;
+    width: 80%;
+}
+
+/* ss结束 */
