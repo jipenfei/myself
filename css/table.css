@@ -1,0 +1,450 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,li{
+    list-style: none
+}
+
+/* aside */
+.aside{
+    width: 20%;
+    height: 100%;
+    padding-top:60px;
+    text-align: center;
+    position: fixed;
+    background: -moz-linear-gradient(top, #ffffff 0%, #000000 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#000000));
+    background: -webkit-linear-gradient(top, #000000 0%,#ffffff 100%);
+    background: -o-linear-gradient(top, #ffffff 0%, #000000 100%);
+    background: -ms-linear-gradient(top, #ffffff 0%, #000000 100%);
+    background: linear-gradient(to bottom, #ffffff 0%, #000000 100%);
+    overflow-y: scroll;
+    z-index: 1;
+}
+
+.aside img{
+    display: none;
+}
+.aside .img-circle{
+    display: block;
+    width: 100px;
+    height: 100px;
+    border:2px solid #000;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    cursor: pointer;
+}
+.aside span{
+    font-family: "Roboto", Arial, sans-serif;
+    font-weight: 700;
+    margin-bottom: 2em;
+    text-transform: uppercase;
+    font-size: 20px;
+    display: block;
+    position: absolute;
+    left:50%;
+    transform: translate(-50%, 0);
+    top:160px;
+}
+.aside ul{
+    box-sizing: border-box;
+    padding-left: 20%;
+}
+.aside ul li{
+    height: 40px;
+    width:75%;
+    font-family: "Roboto", Arial, sans-serif;
+    margin: 0 0 20px 0;
+    font-size: 14px;
+    color:#000;
+    font-weight: 700;
+    border:2px solid;
+    border-radius: 25px;
+    -moz-border-radius:25px;
+    -webkit-border-radius:25px;
+    line-height: 40px;
+    cursor: pointer;
+}
+.aside ul li:hover{
+    background: #000;
+    color: white;
+}
+
+.person{
+    background: #FFF0F5;
+    height: 250px;
+    opacity:0.5;
+    position: fixed;
+    top:20%;
+    left:20%;
+    display: none;
+    z-index: 50;
+}
+@-webkit-keyframes my
+{
+    from{
+        background: red;
+        width: 0px;
+        height: 0px;
+        transform: rotatez(0)
+    }
+    to{
+        width: 150px;
+        transform: rotatez(360deg)
+    }
+}
+.aside ul{
+    margin-top:200px;
+}
+/* aside结束 */
+
+
+/* ss开始 */
+.ss{
+    float: right;
+    width: 80%;
+}
+
+#myCarousel img{
+    width: 100%;
+    height: 577px;
+}
+
+/* ss结束 */
+
+
+
+/* contain */
+.ss h2{
+    font-size: 22px;
+    font-weight: 200;
+    color: #333;
+    padding-top:0px;
+}
+#bigcanvas {
+    height: 300px;
+    width: 100%;
+    background-color: #eee;
+    display: block;
+    margin: 0 auto;
+
+}
+.contain{
+    width: 75%;
+    height: 300px;
+    z-index : 1;
+    position : absolute;
+    top:600px;
+}
+.contain p{
+    font-size: 22px;
+    margin-top:45px;
+}
+.contain div{
+    width:15%;
+    height: 100%;
+    float: left;
+    padding-top:20px;
+    text-align: center;
+
+}
+.contain .canva-title{
+    width: 25%;
+}
+.contain canvas{
+
+    z-index : 1;
+    border: 1px solid black;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+/* .contian p{
+
+} */
+
+
+/* contain */
+.project-box li{
+    width: 49.9%;
+    float: left;
+    margin-right: 1px;
+
+}
+.project-box{
+    overflow: hidden;
+    position: relative
+}
+.project-box img{
+    width: 100%;
+}
+.project-word{
+    position: absolute;
+    top:20%;
+    width: 49.9%;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+}
+.box-shandow{
+    position: absolute;
+    top:0px;
+    width: 49.9%;
+    height: 50%;
+    z-index:2;
+    background: rgba(0,0,0,0.2);
+    display: none;
+    text-align: center;
+}
+.box-shandow{
+    position: absolute;
+    top:0px;
+    width: 49.9%;
+    height: 50%;
+    z-index:2;
+    background: rgba(0,0,0,0.2);
+    text-align: center;
+}
+.box-shandow2{
+    position: absolute;
+    top:50%;
+    width: 49.9%;
+    height: 50%;
+    z-index:2;
+    background: rgba(0,0,0,0.2);
+    display: none;
+    text-align: center;
+}
+.box-shandow2 p{
+    color: #252525;
+    font-size: 17px;
+    position: absolute;
+    top:53%;
+    width:100%;
+    text-align: center;
+    opacity:1;
+}
+.box-shandow p{
+    color: #252525;
+    font-size: 17px;
+    position: absolute;
+    top:53%;
+    width:100%;
+    text-align: center;
+    opacity:1;
+}
+
+.project-box li:hover .box-border{
+    display: block;
+
+}
+
+.box-border{
+    position: absolute;
+    top:5%;
+    left: 4%;
+    width:42%;
+    height:40%;
+    z-index: 3;
+}
+.box-border1{
+    position: absolute;
+    top:5%;
+    right: 4%;
+    width:42%;
+    height:40%;
+    z-index: 3;
+}
+.box-border2{
+    position: absolute;
+    top:55%;
+    left: 4%;
+    width:42%;
+    height:40%;
+    z-index: 3;
+}
+.box-border3{
+    position: absolute;
+    top:55%;
+    right: 4%;
+    width:42%;
+    height:40%;
+    z-index: 3;
+}
+.project-word2{
+    position: absolute;
+    top:70%;
+    width: 49.9%;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+}
+.topLine{
+    width: 5px;
+    height: 2px;
+    background: #fff;
+    position:absolute;
+    left: 0;
+    z-index:2;
+    top: -1px;
+}
+.bottomLine{
+    width: 0px;
+    height: 2px;
+    background:#fff;
+    position:absolute;
+    left: 0;
+    z-index:2;
+    bottom: -1px;
+}
+.leftLine{
+    width: 2px;
+    height: 0px;
+    background: #fff;
+    position:absolute;
+    left: -1;
+    z-index:2;
+    bottom: -1px;
+}
+.rightLine{
+    width: 2px;
+    height: 0px;
+    background:#fff;
+    position:absolute;
+    right: -1px;
+    z-index:2;
+    top: -1px;
+}
+.link{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+/* contain结束 */
+
+
+
+/* 内容开始 */
+.wrapper{
+
+    margin: 0 auto;
+    background: #f5f5f5
+}
+.hot-product{
+    margin-top:50px;
+}
+.zhineng{
+    padding-top: 30px;
+}
+.right-style{
+
+    vertical-align:-5px;
+    display:inline-block;
+    font-size: 24px;
+    color: #b0b0b0;
+    margin-left: px;
+}
+.hot-product .movie{
+    height: 285px;
+    padding-bottom: 60px;
+}
+.movie li{
+    float: left;
+    width: 160px;
+    height: 280px;
+    position: relative;
+    margin-right: 20px;
+    margin-left: 2px;
+    background: #fff
+}
+.movie li:hover{
+    position:relative;
+    top:-2px;
+    box-shadow: 0 5px 5px 5px rgba(0,0,0,0.2)
+}
+.movie img{
+    width: 160px;
+    height: 220px;
+
+}
+.play{
+    font-size:30px;
+    position: absolute;
+    left: 15px;
+    top:175px;
+    color: white;
+
+}
+.price3{
+    color: #333;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 8px;
+}
+.movie .write{
+    text-align: center;
+    margin-top:-6px;
+}
+
+
+/* 内容结束 */
+
+/* 旋转的立方体： */
+#container{
+    margin-left: 50px;
+    width: 200px;
+    height: 200px;
+    position:relative;
+    transform-style: preserve-3d;
+    animation: run 2s linear infinite;
+}
+@-webkit-keyframes run {
+    100%{
+        -webkit-transform: rotateY(360deg);
+    }
+}
+#container div{
+    width: 200px;
+    height: 200px;
+
+    border-radius: 10px;
+    font-size: 50px;
+    text-align: center;
+    line-height: 200px;
+    position: absolute;
+    left:0;
+    top:0;
+}
+#container img{
+    width: 200px;
+    height: 200px;
+}
+#one{
+    transform: rotateX(90deg) translateZ(120px);
+}
+#two{
+    transform: translateZ(100px);
+}
+#three{
+    transform: rotateY(90deg) translateZ(120px);
+}
+#four{
+    transform: rotateY(180deg) translateZ(120px);
+}
+#five{
+    transform: rotateY(-90deg) translateZ(120px);
+}
+#six{
+    -webkit-transform: rotateX(-90deg) translateZ(120px);
+}
+
+
+
+
+/* 旋转的立方体结束 */
+
+
